@@ -1,4 +1,6 @@
 plugins {
+    id 'org.springframework.boot' version '2.1.11.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'java'
 }
 
@@ -12,4 +14,9 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1'
+    compile 'org.mybatis.dynamic-sql:mybatis-dynamic-sql:1.1.4'
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+    runtimeOnly 'com.h2database:h2'
 }

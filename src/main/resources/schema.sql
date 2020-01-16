@@ -1,0 +1,4 @@
+CREATE TABLE friends (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(10)
+);
